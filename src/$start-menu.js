@@ -40,9 +40,10 @@ var $start_button = $(".start-button");
 $start_button.on("pointerdown", function () {
 	// start menus are 4 week babeez111!1!!!
 	// toggle_start_menu();
-	playSound("https://www.myinstants.com/media/sounds/engineer_no01.mp3");
+	playSound("https://files.catbox.moe/ztzyet.mp3");
 });
 
+/* nuh uh
 $("body").on("pointerdown", function (e) {
 	if ($(e.target).closest(".start-menu, .start-button").length === 0) {
 		close_start_menu();
@@ -60,3 +61,4 @@ $(window).on("keydown", function (e) {
 		close_start_menu();
 	}
 });
+*/
