@@ -10,6 +10,13 @@ var username = username_match && username_match[1] || "Admin";
 var $start_menu = $(".start-menu");
 $start_menu.hide();
 // TODO: legitimate contents or whatever
+
+// thank you stackoverflow post from 2012 (https://stackoverflow.com/questions/10142867/reference-url-with-javascript-to-play-sound#:~:text=function%20playsound(url)%20%7B%20var%20a%20%3D%20new%20audio(url)%3B%20a.play()%3B%20%7D)
+function playSound(url) {
+    var a = new Audio(url);
+    a.play();
+}
+
 var open_start_menu = function () {
 	$start_button.addClass("selected");
 	$start_menu.attr("hidden", null);
@@ -31,7 +38,9 @@ var toggle_start_menu = function () {
 
 var $start_button = $(".start-button");
 $start_button.on("pointerdown", function () {
-	toggle_start_menu();
+	// start menus are 4 week babeez111!1!!!
+	// toggle_start_menu();
+	playSound("https://www.myinstants.com/media/sounds/engineer_no01.mp3");
 });
 
 $("body").on("pointerdown", function (e) {
